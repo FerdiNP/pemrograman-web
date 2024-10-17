@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="tugas1.css">
+    <meta charset="utf-8">
+    <title>Kalkulator</title>
+  </head>
+  <body>
+    <div class="calculator" >
+      <input class="input" id="input" readOnly disabled></input>
+      <div class="number-button">
+        <button class="clear" onclick="resetView()">C</button>
+        <button class="ops" onclick="inputView('%')">%</button>
+        <button class="ops" onclick="inputView('/')">/</button>
+
+        <button class="num" onclick="inputView('7')">7</button>
+        <button class="num" onclick="inputView('8')">8</button>
+        <button class="num" onclick="inputView('9')">9</button>
+        <button class="ops" onclick="inputView('*')">x</button>
+
+        <button class="num" onclick="inputView('4')">4</button>
+        <button class="num" onclick="inputView('5')">5</button>
+        <button class="num" onclick="inputView('6')">6</button>
+        <button class="ops" onclick="inputView('-')">-</button>
+
+        <button class="num" onclick="inputView('1')">1</button>
+        <button class="num" onclick="inputView('2')">2</button>
+        <button class="num" onclick="inputView('3')">3</button>
+        <button class="ops" onclick="inputView('+')">+</button>
+
+        <button class="dot" onclick="inputView('.')">.</button>
+        <button class="num" onclick="inputView('0')">0</button>
+        <button class="equals" onclick="count()">=</button>
+      </div>
+    </div>
+
+  </body>
+
+  <script src="tugas1.js"></script>
+</html>

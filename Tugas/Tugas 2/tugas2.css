@@ -1,0 +1,194 @@
+/* tugas2.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Sans MS', sans-serif;
+  background-color: #a39bd2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: radial-gradient(circle, #ddd 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+.container {
+  background-color: #fff;
+  width: 400px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.title img {
+  width: 80px;
+  height: auto;
+}
+
+.title-h1 {
+  transform: rotate(2deg);
+  padding: 0.2rem 1.2rem;
+  border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+  background-color: #a39bd2;
+  color: #7cecff;
+  -webkit-text-stroke: 1px #fff;
+  font-family: 'Comic Sans MS', sans-serif;
+}
+
+.form-input {
+  margin-bottom: 20px;
+  font-family: 'Comic Sans MS', sans-serif;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.form-input h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+  font-style: italic;
+}
+
+.text-input {
+  width: 70%;
+  padding: 12px;
+  margin-right: 10px;
+  border: 2px dashed #ff92ff;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Comic Sans MS', sans-serif;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.text-input:focus {
+  background-color: #fff;
+  border: 2px solid #ff92ff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 173, 255, 0.5);
+}
+
+.text-input:hover {
+  background-color: #f0f0f0;
+}
+
+.add-input {
+  background-color: #7cecff;
+  color: #000;
+  padding: 12px 15px;
+  border: 2px solid #ff92ff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Comic Sans MS', sans-serif;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-input:hover {
+  border: 2px solid #63d8e1;
+  background-color: #ff92ff;
+  transform: scale(1.05);
+}
+
+.add-input:active {
+  background-color: #50c5d0;
+  transform: scale(0.98);
+}
+
+.list {
+  margin-top: 20px;
+}
+
+.items-list {
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 12px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.item:hover {
+  background-color: #b3e5fc;
+  transform: scale(1.02);
+}
+
+.item .checkbox {
+  display: none;
+}
+
+.item .checkbox:hover {
+  transform: scale(1.1);
+}
+
+.item .delete-button {
+  background-color: #ff7a7a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.item .delete-button:hover {
+  background-color: #ff5a5a;
+  transform: scale(1.1);
+}
+
+.item .delete-button:active {
+  background-color: #ff3a3a;
+  transform: scale(0.95);
+}
+
+
+.checked {
+  text-decoration: line-through #ff92ff;
+  color: #aaa;
+  background-color: #e0f7fa;
+}
+
+
+@media (max-width: 500px) {
+  .input-group {
+    flex-direction: column;
+  }
+
+  .text-input {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .add-input {
+    width: 100%;
+  }
+}

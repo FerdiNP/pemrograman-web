@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="codelab1.css">
+
+    <title>Kalkulator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calc">
+        <h1>Penjumlahan</h1>
+        <form id="form">
+          <label> Bilangan Pertama </label>
+          <input type="number" id="a" />
+          <label> Bilangan Kedua </label>
+          <input type="number" id="b" />
+        </form>
+        <div class="button">
+          <button type="button" id="total">Jumlahkan</button>
+          <button type="button" id="reset">Reset</button>
+        </div>
+        <p id="hasil"> Hasil :  </p>
+      </div>
+    </div>
+
+    <script>
+      const total = document.getElementById("total");
+      const reset = document.getElementById("reset");
+      const hasil = document.getElementById("hasil");
+
+      total.addEventListener("click", function () {
+        var nilaiA = parseInt(a.value);
+        var nilaiB = parseInt(b.value);
+        var sum = nilaiA + nilaiB;
+        console.log(sum);
+        hasil.innerHTML = "Hasil : " + sum;
+      });
+
+      reset.addEventListener("click", function () {
+        document.getElementById("form").reset();
+        hasil.innerHTML = "Hasil : ";
+      });
+    </script>
+  </body>
+</html>

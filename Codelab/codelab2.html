@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="codelab2.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Form Pendaftaran</h2>
+        <form id="form">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan Nama">
+
+            <label for="email">Email</label>
+            <input type="email" id="email"  placeholder="Masukkan Email">
+
+            <label for="address">Alamat Lengkap</label>
+            <input type="text" id="address" name="address" placeholder="Masukkan Alamat">
+
+            <button type="button" id="submit">Daftar</button>
+        </form>
+    </div>
+
+    <script>
+      document.getElementById("submit").addEventListener("click", function() {
+          var name = document.getElementById("name").value;
+          var email = document.getElementById("email").value.trim();
+          var address = document.getElementById("address").value;
+
+          if (name === "" || email === "" || address === "") {
+            event.preventDefault();
+              alert("Semua data harus diisi.");
+          } else {
+              alert("Pendaftaran berhasil!");
+              document.getElementById("form").reset();
+          }
+      });
+
+  </script>
+</body>
+</html>
