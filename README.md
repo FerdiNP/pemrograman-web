@@ -1,9 +1,10 @@
-a web programming practicum  
+a web programming practice
 
 availabel branch rn :
--  Modul 1
--  Modul 2
--  Modul 3
+-  Module 1
+-  Module 2
+-  Module 3
+-  Module 4
  
 more coming soon :soon:  
 
